@@ -1,7 +1,7 @@
 const ProductTable = ({ products }) => {
     return (
-      <div>
-        <table>
+      <div class="overflow-x-auto mr-32 ml-32">
+        <table class="table">
           <thead>
             <tr style={{backgroundColor: 'lightgrey'}}>
               <th>Name</th>
@@ -10,7 +10,7 @@ const ProductTable = ({ products }) => {
           </thead>
           <tbody>
             {products.map((product) => (
-            <tr key={product.id} style={{ color: product.inStock ? 'black' : 'red' }}>
+            <tr class="hover" key={product.id} style={{ color: product.inStock ? 'black' : 'red' }}>
                 <td>{product.name}</td>
                 <td>{product.price}</td>
               </tr>
