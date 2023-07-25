@@ -10,7 +10,7 @@ const ProductTable = ({ products }) => {
           </thead>
           <tbody>
             {products.map((product) => (
-              <tr key={product.id}>
+            <tr key={product.id} style={{ color: product.inStock ? 'black' : 'red' }}>
                 <td>{product.name}</td>
                 <td>{product.price}</td>
               </tr>
