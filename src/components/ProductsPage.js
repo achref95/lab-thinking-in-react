@@ -29,7 +29,7 @@ function ProductsPage () {
 
   return (
     <div>
-      <h1 class="text-2xl mb-8">IronStore</h1>
+      <h1 className="text-2xl mb-8">IronStore</h1>
       <SearchBar handleSearch={handleSearch} filteredProducts={filteredProducts} inStock={inStock} />
       <ProductTable products={products} />
     </div>
